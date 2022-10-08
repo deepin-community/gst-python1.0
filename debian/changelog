@@ -1,0 +1,445 @@
+gst-python1.0 (1.18.5-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 13 Sep 2021 09:47:08 +0300
+
+gst-python1.0 (1.18.4-2) unstable; urgency=medium
+
+  * Upload to unstable.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 22 Apr 2021 20:58:16 +0300
+
+gst-python1.0 (1.18.4-1) experimental; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 05 Apr 2021 11:54:58 +0300
+
+gst-python1.0 (1.18.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 14 Jan 2021 09:56:08 +0200
+
+gst-python1.0 (1.18.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 07 Dec 2020 10:13:46 +0200
+
+gst-python1.0 (1.18.1-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Apply multi-arch hints.
+    + gstreamer1.0-python3-dbg-plugin-loader,
+      gstreamer1.0-python3-plugin-loader, python3-gst-1.0-dbg: Add Multi-Arch:
+      same.
+  * Set upstream metadata fields: Bug-Submit.
+  * Remove Priority on python3-gst-1.0-dbg that duplicates source.
+
+  [ Sebastian Dröge ]
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 28 Oct 2020 08:55:21 +0200
+
+gst-python1.0 (1.18.0-1) unstable; urgency=medium
+
+  * New upstream stable release.
+  * Upload to unstable.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 08 Sep 2020 12:15:08 +0300
+
+gst-python1.0 (1.17.90-1) experimental; urgency=medium
+
+  * New upstream release candidate.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 21 Aug 2020 14:53:14 +0300
+
+gst-python1.0 (1.17.2-1) experimental; urgency=medium
+
+  * New upstream development release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 08 Jul 2020 15:03:50 +0300
+
+gst-python1.0 (1.16.2-2) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Trim trailing whitespace.
+  * Use secure copyright file specification URI.
+  * Remove unnecessary X-Python{,3}-Version field in debian/control.
+  * Bump debhelper from old 9 to 12.
+  * Set debhelper-compat version in Build-Depends.
+  * Change priority extra to priority optional.
+  * Set upstream metadata fields: Bug-Database, Name (from ./configure),
+    Repository, Repository-Browse.
+
+  [ Sebastian Dröge ]
+  * Drop Python 2 support (Closes: #936670).
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 24 Mar 2020 11:59:01 +0200
+
+gst-python1.0 (1.16.2-1) unstable; urgency=medium
+
+  * New upstream release
+  * debian/control:
+    + Explicitly build-depend on python[3]-gi (Closes: #945036).
+  * debian/rules,
+    debian/control:
+    + Switch from autotools to meson for the build system.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 04 Dec 2019 16:05:04 +0200
+
+gst-python1.0 (1.16.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 25 Sep 2019 11:56:24 +0300
+
+gst-python1.0 (1.16.0-3) unstable; urgency=medium
+
+  * Source-only re-upload
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 02 Sep 2019 10:33:31 +0300
+
+gst-python1.0 (1.16.0-2) unstable; urgency=medium
+
+  * Upload to unstable
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 18 Jul 2019 11:59:27 +0300
+
+gst-python1.0 (1.16.0-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 19 Apr 2019 10:24:26 +0300
+
+gst-python1.0 (1.15.90-1) experimental; urgency=medium
+
+  * New upstream release candidate
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 12 Apr 2019 10:15:18 +0300
+
+gst-python1.0 (1.15.2-1) experimental; urgency=medium
+
+  * New upstream development release
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 28 Feb 2019 12:30:10 +0200
+
+gst-python1.0 (1.15.1-1) experimental; urgency=medium
+
+  * New upstream development release
+    + debian/control:
+      - Update GStreamer dependency.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 17 Jan 2019 17:55:23 +0200
+
+gst-python1.0 (1.14.4-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 03 Oct 2018 14:07:29 +0300
+
+gst-python1.0 (1.14.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 17 Sep 2018 10:09:23 +0300
+
+gst-python1.0 (1.14.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 23 Jul 2018 12:28:38 +0300
+
+gst-python1.0 (1.14.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 18 May 2018 11:11:08 +0300
+
+gst-python1.0 (1.14.0-2) unstable; urgency=medium
+
+  * debian/patches/0001-overrides-use-get_introspection_module.patch,
+    debian/control:
+    + Fix importing of GI overrides (Closes: #896241, #896222).
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 28 Apr 2018 10:33:26 +0300
+
+gst-python1.0 (1.14.0-1) unstable; urgency=medium
+
+  * New upstream stable release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 20 Mar 2018 10:21:35 +0200
+
+gst-python1.0 (1.13.91-1) experimental; urgency=medium
+
+  * New upstream release candidate.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 14 Mar 2018 11:19:27 +0200
+
+gst-python1.0 (1.13.90-1) experimental; urgency=medium
+
+  * New upstream release candidate.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 05 Mar 2018 10:31:34 +0200
+
+gst-python1.0 (1.13.1-1) experimental; urgency=medium
+
+  * New upstream development release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 26 Feb 2018 21:14:25 +0200
+
+gst-python1.0 (1.12.4-2) unstable; urgency=medium
+
+  * debian/rules:
+    + Also clean-up install directories
+  * debian/rules,
+    debian/control,
+    debian/*.install:
+    + Ship Python plugin loader for each build in a separate package that
+      conflicts with all the others. There can only be one of the plugin
+      loaders be installed at a time as otherwise the different Python
+      versions would all be loaded into the same process.
+      Previously the Python plugin loader was removed in version 1.4.0-2.
+
+      It is currently only shipped for the non-debug Python 3 build, as there
+      are some problems with the upstream code in debug builds and it does not
+      work with Python 2. Python 2 support will also likely be dropped with
+      the next upstream release (in general).
+  * debian/control:
+    + Use python3:Depends for the Python3 packages.
+    + Fix-up dependencies of the -dbg packages.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 23 Jan 2018 17:54:17 +0200
+
+gst-python1.0 (1.12.4-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 07 Dec 2017 19:53:31 +0200
+
+gst-python1.0 (1.12.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 18 Sep 2017 21:55:12 +0300
+
+gst-python1.0 (1.12.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 14 Jul 2017 13:42:08 +0300
+
+gst-python1.0 (1.12.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 20 Jun 2017 11:57:26 +0300
+
+gst-python1.0 (1.12.0-1) experimental; urgency=medium
+
+  * New upstream stable release
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 04 May 2017 15:30:28 +0300
+
+gst-python1.0 (1.11.91-1) experimental; urgency=medium
+
+  * New upstream release canditate
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 27 Apr 2017 17:07:43 +0300
+
+gst-python1.0 (1.11.90-1) experimental; urgency=medium
+
+  * New upstream release candidate.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 07 Apr 2017 16:26:36 +0300
+
+gst-python1.0 (1.11.2-1) experimental; urgency=medium
+
+  * New development release
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 24 Feb 2017 14:57:11 +0200
+
+gst-python1.0 (1.11.1-1) experimental; urgency=medium
+
+  * New upstream development release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 12 Jan 2017 15:34:18 +0200
+
+gst-python1.0 (1.10.4-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 23 Feb 2017 15:43:44 +0200
+
+gst-python1.0 (1.10.3-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 30 Jan 2017 16:15:37 +0200
+
+gst-python1.0 (1.10.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 29 Nov 2016 16:02:54 +0200
+
+gst-python1.0 (1.10.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 17 Nov 2016 15:21:07 +0200
+
+gst-python1.0 (1.10.0-1) unstable; urgency=medium
+
+  * New upstream stable release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 01 Nov 2016 18:05:03 +0200
+
+gst-python1.0 (1.9.90-1) experimental; urgency=medium
+
+  * New upstream unstable release:
+    + debian/control:
+      - Build-depend on GStreamer >= 1.9.90.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 30 Sep 2016 12:54:54 +0300
+
+gst-python1.0 (1.9.2-1) experimental; urgency=medium
+
+  * New upstream unstable release:
+    + debian/control:
+      - Build-depend on GStreamer >= 1.9.2.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 01 Sep 2016 12:22:45 +0300
+
+gst-python1.0 (1.9.1-1) experimental; urgency=medium
+
+  * New upstream unstable release:
+    + debian/control:
+      - Build-depend on GStreamer >= 1.9.1.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 06 Jul 2016 13:37:41 +0300
+
+gst-python1.0 (1.8.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 09 Jun 2016 11:46:02 +0300
+
+gst-python1.0 (1.8.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 20 Apr 2016 18:35:08 +0300
+
+gst-python1.0 (1.8.0-1) unstable; urgency=medium
+
+  * New upstream stable release:
+    + debian/control:
+      - Build-depend on GStreamer >= 1.8.0.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 24 Mar 2016 13:01:59 +0200
+
+gst-python1.0 (1.7.91-1) experimental; urgency=medium
+
+  * New upstream release candidate:
+    + debian/control:
+      - Build-depend on GStreamer >= 1.7.91.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 15 Mar 2016 12:32:13 +0200
+
+gst-python1.0 (1.7.90-1) experimental; urgency=medium
+
+  * New upstream release candidate:
+    + debian/control:
+      - Build-depend on GStreamer >= 1.7.90.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 01 Mar 2016 17:40:12 +0200
+
+gst-python1.0 (1.7.2-1) experimental; urgency=medium
+
+  * New upstream unstable release:
+    + debian/control:
+      - Build-depend on GStreamer >= 1.7.2.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 19 Feb 2016 12:03:02 +0200
+
+gst-python1.0 (1.7.1-1) experimental; urgency=medium
+
+  * New upstream unstable release:
+    + debian/control:
+      - Build-depend on GStreamer >= 1.7.1.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 24 Dec 2015 14:59:13 +0100
+
+gst-python1.0 (1.6.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 14 Dec 2015 20:09:22 +0100
+
+gst-python1.0 (1.6.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 30 Oct 2015 17:07:17 +0200
+
+gst-python1.0 (1.6.0-1) unstable; urgency=medium
+
+  [ Scott Kitterman ]
+  * Fix python3 depends by using python3:Depends vice python:Depends so
+    correct depends are generated (Closes: #799689).
+  * Remove obsolete provides
+
+  [ Sebastian Dröge ]
+  * New upstream stable release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 25 Sep 2015 18:23:04 +0200
+
+gst-python1.0 (1.5.2-1) experimental; urgency=medium
+
+  * New unstable upstream release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Thu, 25 Jun 2015 10:04:30 +0200
+
+gst-python1.0 (1.4.0-2) unstable; urgency=medium
+
+  * Upload to unstable.
+  * debian/control: Update python dependency to >= 2.7 (Closes: #753429).
+  * debian/rules: Drop GStreamer python plugin for now (Closes: #769171).
+    + Nothing is using it currently and it's not clear how this should
+      be properly handled without making all 4 binary packages conflict
+      with each other.
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 13 May 2015 12:05:17 +0300
+
+gst-python1.0 (1.4.0-1) experimental; urgency=medium
+
+  * New upstream stable release:
+    + debian/control:
+      - Update (build-) depends on GStreamer.
+      - Add missing dependencies for the GStreamer GIR packages.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 10 Nov 2014 16:26:55 +0100
+
+gst-python1.0 (1.2.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release, fixing Python 3 compatiblity problems.
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 26 Apr 2014 11:46:44 +0200
+
+gst-python1.0 (1.2.0-1) unstable; urgency=medium
+
+  * New upstream stable release.
+  * debian/rules,
+    debian/patches/0001-Fix-extension-of-native-Python-module.patch:
+    + Fix filename of the debug Python module (Closes: #728447, #737544).
+
+ -- Sebastian Dröge <slomo@debian.org>  Sat, 29 Mar 2014 11:37:57 +0100
+
+gst-python1.0 (1.1.90-1) experimental; urgency=low
+
+  * Initial upload.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 30 Sep 2013 11:59:10 +0200

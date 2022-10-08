@@ -1,0 +1,41 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/default.mk
+include /usr/share/python3/python.mk
+
+PYVERS := $(shell py3versions --supported -v)
+FLAVOURS := $(PYVERS) $(patsubst %,%-dbg,$(PYVERS))
+
+%:
+	dh $@ --buildsystem=meson --with python3
+
+override_dh_auto_configure:
+	set -e && for x in $(FLAVOURS); do \
+	    dh_auto_configure --builddirectory=build-$$x -- -Dpython=/usr/bin/python$$x \
+	        -Dlibpython-dir="`/usr/bin/python$$x-config --configdir`" ; \
+	done
+
+override_dh_auto_build:
+	set -e && for x in $(FLAVOURS); do \
+	    dh_auto_build --builddirectory=build-$$x; \
+	done
+
+override_dh_auto_test:
+
+override_dh_auto_install:
+	set -e && for x in $(FLAVOURS); do \
+	    INST=debian/install-`echo $$x | sed 's/\.[0-9]*//'`; \
+	    dh_auto_install --builddirectory=build-$$x --destdir=$$INST; \
+	done
+
+override_dh_auto_clean:
+	rm -rf build-*
+	rm -rf debian/install-*
+	dh_auto_clean
+
+override_dh_install:
+	dh_install -ppython3-gst-1.0 -pgstreamer1.0-python3-plugin-loader --sourcedir=debian/install-3
+	dh_install -ppython3-gst-1.0-dbg -pgstreamer1.0-python3-dbg-plugin-loader --sourcedir=debian/install-3-dbg
+
+override_dh_strip:
+	dh_strip --no-automatic-dbgsym
