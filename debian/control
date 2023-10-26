@@ -4,21 +4,18 @@ Priority: optional
 Maintainer: Maintainers of GStreamer packages <gst-python1.0@packages.debian.org>
 Uploaders: Sebastian Dröge <slomo@debian.org>
 Build-Depends: debhelper-compat (= 13),
-               debhelper,
-               dpkg-dev (>= 1.16.1~),
-               meson (>= 0.46.0),
-               dh-python,
+               dh-sequence-python3,
+               meson (>= 0.62),
                pkg-config,
-               libgstreamer1.0-dev (>= 1.18.0),
-               libgstreamer-plugins-base1.0-dev (>= 1.18.0),
-               gir1.2-gstreamer-1.0 (>= 1.18.0),
-               gir1.2-gst-plugins-base-1.0 (>= 1.18.0),
-               python3-gi (>= 3.8),
-               python-gi-dev (>= 3.8),
-               python3-all-dev,
-               python3-all-dbg,
-               python3-gi-dbg
-Standards-Version: 4.5.0
+               libgstreamer1.0-dev (>= 1.22.0),
+               libgstreamer-plugins-base1.0-dev (>= 1.22.0),
+               gir1.2-gstreamer-1.0 (>= 1.22.0),
+               gir1.2-gst-plugins-base-1.0 (>= 1.22.0),
+               python3-gi,
+               python-gi-dev,
+               python3-all-dev
+Standards-Version: 4.6.2
+Rules-Requires-Root: no
 Vcs-Git: https://salsa.debian.org/gstreamer-team/gst-python1.0.git
 Vcs-Browser: https://salsa.debian.org/gstreamer-team/gst-python1.0/
 Homepage: https://gstreamer.freedesktop.org
@@ -29,34 +26,11 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${python3:Depends},
          ${shlibs:Depends},
          ${misc:Depends},
-         python3-gi (>= 3.8),
+         python3-gi,
          gir1.2-glib-2.0,
-         gir1.2-gstreamer-1.0 (>= 1.18.0),
-         gir1.2-gst-plugins-base-1.0 (>= 1.18.0)
+         gir1.2-gstreamer-1.0 (>= 1.22.0),
+         gir1.2-gst-plugins-base-1.0 (>= 1.22.0)
 Description: GStreamer GObject Introspection overrides for Python (Python 3)
- GStreamer is a streaming media framework, based on graphs of filters
- which operate on media data.  Applications using this library can do
- anything from real-time sound processing to playing videos, and just
- about anything else media-related.  Its plugin-based architecture means
- that new data types or processing capabilities can be added simply by
- installing new plug-ins.
- .
- This package contains GObject Introspection overrides for Python that
- can be used by Python applications using GStreamer.
-
-Package: python3-gst-1.0-dbg
-Architecture: any
-Section: debug
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${python3:Depends},
-         ${shlibs:Depends},
-         ${misc:Depends},
-         python3-gi (>= 3.8),
-         gir1.2-glib-2.0,
-         gir1.2-gstreamer-1.0 (>= 1.18.0),
-         gir1.2-gst-plugins-base-1.0 (>= 1.18.0)
-Multi-Arch: same
-Description: GStreamer GObject Introspection overrides for Python (Python 3, debug extensions)
  GStreamer is a streaming media framework, based on graphs of filters
  which operate on media data.  Applications using this library can do
  anything from real-time sound processing to playing videos, and just
@@ -73,32 +47,11 @@ Pre-Depends: ${misc:Pre-Depends}
 Depends: ${python3:Depends},
          ${shlibs:Depends},
          ${misc:Depends},
-         python3-gi (>= 3.8),
+         python3-gi,
          python3-gst-1.0 (= ${binary:Version})
 Conflicts: gstreamer1.0-python-plugin-loader, gstreamer1.0-python-dbg-plugin-loader, gstreamer1.0-python3-dbg-plugin-loader
 Multi-Arch: same
 Description: GStreamer Loader for Python Plugin (Python 3)
- GStreamer is a streaming media framework, based on graphs of filters
- which operate on media data.  Applications using this library can do
- anything from real-time sound processing to playing videos, and just
- about anything else media-related.  Its plugin-based architecture means
- that new data types or processing capabilities can be added simply by
- installing new plug-ins.
- .
- This package contains the Python 3 version of the Python plugin loader,
- which allows GStreamer plugins to be written in Python.
-
-Package: gstreamer1.0-python3-dbg-plugin-loader
-Architecture: any
-Pre-Depends: ${misc:Pre-Depends}
-Depends: ${python3:Depends},
-         ${shlibs:Depends},
-         ${misc:Depends},
-         python3-gi (>= 3.8),
-         python3-gst-1.0-dbg (= ${binary:Version})
-Conflicts: gstreamer1.0-python-plugin-loader, gstreamer1.0-python-dbg-plugin-loader, gstreamer1.0-python3-plugin-loader
-Multi-Arch: same
-Description: GStreamer Loader for Python Plugin (Python 3, debug extensions)
  GStreamer is a streaming media framework, based on graphs of filters
  which operate on media data.  Applications using this library can do
  anything from real-time sound processing to playing videos, and just

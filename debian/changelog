@@ -1,3 +1,125 @@
+gst-python1.0 (1.22.6-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Mon, 25 Sep 2023 13:05:15 -0400
+
+gst-python1.0 (1.22.5-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Revert "Set DEB_PYTHON_INSTALL_LAYOUT=deb to work around behavior change":
+    no longer needed after debhelper 13.11.5
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Tue, 15 Aug 2023 10:16:10 -0400
+
+gst-python1.0 (1.22.4-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Set DEB_PYTHON_INSTALL_LAYOUT=deb to work around behavior change
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Fri, 30 Jun 2023 11:49:21 -0400
+
+gst-python1.0 (1.22.3-2) unstable; urgency=medium
+
+  * Team upload
+  * Release to unstable
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Mon, 12 Jun 2023 14:45:28 -0400
+
+gst-python1.0 (1.22.3-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * debian/rules: Enable all hardening flags
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Sun, 21 May 2023 07:58:28 -0400
+
+gst-python1.0 (1.22.1-1) experimental; urgency=medium
+
+  * Team upload.
+  * New upstream bugfix release (LP: #2015129)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Tue, 04 Apr 2023 10:23:57 -0400
+
+gst-python1.0 (1.22.0-2) unstable; urgency=medium
+
+  * Team upload
+  * Release to unstable
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Sat, 28 Jan 2023 15:57:36 -0500
+
+gst-python1.0 (1.22.0-1) experimental; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Bump minimum meson and gstreamer
+  * debian/rules: Set -Dauto_features=enabled
+  * Set Rules-Requires-Root: no
+  * Bump Standards-Version to 4.6.2
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Fri, 27 Jan 2023 11:50:26 -0500
+
+gst-python1.0 (1.20.5-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Jeremy Bicha ]
+  * New upstream release
+  * Add debian/upstream/signing-key.asc and update debian/watch to use it
+  * Update debian/upstream/metadata
+  * Update standards version to 4.6.1, no changes needed
+
+  [ Debian Janitor ]
+  * Remove constraints unnecessary since buster (oldstable)
+
+ -- Jeremy Bicha <jbicha@ubuntu.com>  Thu, 05 Jan 2023 14:59:54 -0500
+
+gst-python1.0 (1.20.3-1) unstable; urgency=medium
+
+  [ Sebastian Dröge ]
+  * New upstream bugfix release.
+
+  [ Jeremy Bicha ]
+  * Simplify packaging a bit.
+  * Don't skip running dh_auto_test.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 21 Jun 2022 09:23:09 +0300
+
+gst-python1.0 (1.20.2-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Tue, 03 May 2022 10:30:13 +0300
+
+gst-python1.0 (1.20.1-1) unstable; urgency=medium
+
+  * New upstream bugfix release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Mon, 14 Mar 2022 17:36:44 +0200
+
+gst-python1.0 (1.20.0-1) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 04 Feb 2022 09:03:03 +0200
+
+gst-python1.0 (1.19.90-1) experimental; urgency=medium
+
+  * New upstream release candidate.
+
+ -- Sebastian Dröge <slomo@debian.org>  Fri, 28 Jan 2022 18:41:24 +0200
+
+gst-python1.0 (1.18.5-2) unstable; urgency=medium
+
+  * debian/rules,
+    debian/control:
+    + Drop manual Python 3 debug packages (Closes: #994301).
+
+ -- Sebastian Dröge <slomo@debian.org>  Wed, 19 Jan 2022 13:34:58 +0200
+
 gst-python1.0 (1.18.5-1) unstable; urgency=medium
 
   * New upstream bugfix release.
