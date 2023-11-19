@@ -1,5 +1,5 @@
 Name: 'GStreamer GObject Introspection overrides for Python '
-Bug-Database: https://gitlab.freedesktop.org/gstreamer/gst-python/issues
-Bug-Submit: https://gitlab.freedesktop.org/gstreamer/gst-python/issues/new
-Repository: https://gitlab.freedesktop.org/gstreamer/gst-python.git
-Repository-Browse: http://gitlab.freedesktop.org/gstreamer/gst-python
+Bug-Database: https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues
+Bug-Submit: https://gitlab.freedesktop.org/gstreamer/gstreamer/-/issues/new
+Repository: https://gitlab.freedesktop.org/gstreamer/gstreamer.git
+Repository-Browse: https://gitlab.freedesktop.org/gstreamer/gstreamer
