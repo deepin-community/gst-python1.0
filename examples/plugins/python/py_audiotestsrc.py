@@ -22,6 +22,8 @@ except ImportError:
     Gst.error('py_audiotestsrc requires numpy')
     raise
 
+Gst.init_python()
+
 OCAPS = Gst.Caps.from_string (
         'audio/x-raw, format=F32LE, layout=interleaved, rate=44100, channels=2')
 
@@ -84,7 +86,7 @@ class AudioTestSrc(GstBase.BaseSrc):
         self.set_format(Gst.Format.TIME)
 
     def do_set_caps(self, caps):
-        self.info.from_caps(caps)
+        self.info = GstAudio.AudioInfo.new_from_caps(caps)
         self.set_blocksize(self.info.bpf * SAMPLESPERBUFFER)
         return True
 
@@ -174,7 +176,7 @@ class AudioTestSrc(GstBase.BaseSrc):
                     array[:] = 0
         except Exception as e:
             Gst.error("Mapping error: %s" % e)
-            return Gst.FlowReturn.ERROR
+            return (Gst.FlowReturn.ERROR, None)
 
         buf.offset = self.next_sample
         buf.offset_end = next_sample

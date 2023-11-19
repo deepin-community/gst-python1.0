@@ -1,9 +1,8 @@
-gst_elements_shared = shared_library('gstpython',
+gstpython = library('gstpython',
     ['gstpythonplugin.c'],
     include_directories : [configinc],
-    dependencies : [gst_dep, pygobject_dep, gstbase_dep, python_dep, gmodule_dep],
+    dependencies : [gst_dep, pygobject_dep, gstbase_dep, python_dep, gmodule_dep] ,
     install : true,
     install_dir : '@0@/gstreamer-1.0'.format(get_option('libdir')),
 )
-
-plugins = [gst_elements_shared]
+plugins = [gstpython]
