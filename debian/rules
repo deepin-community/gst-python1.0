@@ -40,5 +40,4 @@ execute_before_dh_auto_clean:
 	rm -rf debian/install-*
 
 override_dh_install:
-	mv debian/install-3/usr/local/lib/python* debian/install-3/usr/lib/
 	dh_install -ppython3-gst-1.0 -pgstreamer1.0-python3-plugin-loader --sourcedir=debian/install-3
