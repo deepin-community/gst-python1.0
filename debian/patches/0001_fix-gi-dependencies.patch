@@ -1,0 +1,32 @@
+Description: fix linking (symbols)
+ When building experimental, linking to the partial symbols causes
+ missing symbols during linking. Link to the full library.
+Author: Marc Leeman <marc.leeman@gmail.com>
+Last-Update: 2023-03-01
+
+Index: gst-python1.0/gi/overrides/meson.build
+===================================================================
+--- gst-python1.0.orig/gi/overrides/meson.build
++++ gst-python1.0/gi/overrides/meson.build
+@@ -4,20 +4,13 @@ python.install_sources(pysources,
+   subdir: 'gi/overrides',
+ )
+
+-host_system = host_machine.system()
+-if host_system == 'windows'
+-  gst_dep_for_gi = gst_dep
+-else
+-  gst_dep_for_gi = gst_dep.partial_dependency(compile_args: true, includes: true, sources: true)
+-endif
+-
+ gstpython = python.extension_module('_gi_gst',
+     sources: ['gstmodule.c'],
+     install: true,
+     install_dir : pygi_override_dir,
+     install_tag: 'python-runtime',
+     include_directories : [configinc],
+-    dependencies : [gst_dep_for_gi, python_dep, pygobject_dep],
++    dependencies : [gst_dep, python_dep, pygobject_dep],
+ )
+
+ env = environment()

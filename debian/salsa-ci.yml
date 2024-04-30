@@ -1,0 +1,8 @@
+---
+include:
+  - https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/salsa-ci.yml
+  - https://salsa.debian.org/salsa-ci-team/pipeline/raw/master/pipeline-jobs.yml
+
+# CI runs a fake autopkgtest that does not work (autodep8-python3)
+autopkgtest:
+  allow_failure: true
