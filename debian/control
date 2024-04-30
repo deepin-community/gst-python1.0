@@ -2,15 +2,15 @@ Source: gst-python1.0
 Section: python
 Priority: optional
 Maintainer: Maintainers of GStreamer packages <gst-python1.0@packages.debian.org>
-Uploaders: Sebastian Dröge <slomo@debian.org>
+Uploaders: Sebastian Dröge <slomo@debian.org>, Marc Leeman <marc.leeman@gmail.com>
 Build-Depends: debhelper-compat (= 13),
                dh-sequence-python3,
                meson (>= 0.62),
-               pkg-config,
-               libgstreamer1.0-dev (>= 1.22.0),
-               libgstreamer-plugins-base1.0-dev (>= 1.22.0),
-               gir1.2-gstreamer-1.0 (>= 1.22.0),
-               gir1.2-gst-plugins-base-1.0 (>= 1.22.0),
+               pkgconf,
+               libgstreamer1.0-dev (>= 1.24.0),
+               libgstreamer-plugins-base1.0-dev (>= 1.24.0),
+               gir1.2-gstreamer-1.0 (>= 1.24.0),
+               gir1.2-gst-plugins-base-1.0 (>= 1.24.0),
                python3-gi,
                python-gi-dev,
                python3-all-dev
@@ -28,8 +28,8 @@ Depends: ${python3:Depends},
          ${misc:Depends},
          python3-gi,
          gir1.2-glib-2.0,
-         gir1.2-gstreamer-1.0 (>= 1.22.0),
-         gir1.2-gst-plugins-base-1.0 (>= 1.22.0)
+         gir1.2-gstreamer-1.0 (>= 1.24.0),
+         gir1.2-gst-plugins-base-1.0 (>= 1.24.0)
 Description: GStreamer GObject Introspection overrides for Python (Python 3)
  GStreamer is a streaming media framework, based on graphs of filters
  which operate on media data.  Applications using this library can do

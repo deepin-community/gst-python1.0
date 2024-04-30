@@ -1,3 +1,43 @@
+gst-python1.0 (1.24.2-1) unstable; urgency=medium
+
+  * New upstream version 1.24.2
+
+ -- Marc Leeman <marc.leeman@gmail.com>  Wed, 10 Apr 2024 11:08:11 +0200
+
+gst-python1.0 (1.24.1-1) unstable; urgency=medium
+
+  * New upstream version 1.24.1
+
+ -- Marc Leeman <marc.leeman@gmail.com>  Fri, 22 Mar 2024 12:09:56 +0100
+
+gst-python1.0 (1.24.0-1) unstable; urgency=medium
+
+  * New upstream version 1.24.0
+  * d/patches: gst-python-Fix-API-call-for-Python-3.13.patch applied upstream
+  * d/control: bump gstreamer dependencies to 1.24.0
+  * d/patches: fix gi/overrides/ linking
+
+ -- Marc Leeman <marc.leeman@gmail.com>  Tue, 05 Mar 2024 16:46:42 +0100
+
+gst-python1.0 (1.22.10-1) unstable; urgency=medium
+
+  * Team upload
+  * New upstream release
+  * Drop 2 patches applied in new release
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Wed, 14 Feb 2024 18:39:46 -0500
+
+gst-python1.0 (1.22.9-1) unstable; urgency=high
+
+  * Team upload
+  * New upstream release
+  * Add debian/salsa-ci.yml
+  * Add Marc Leeman to Uploaders
+  * Cherry-pick 3 patches to fix compatibility with Python 3.12
+    (Closes: #1055575)
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Fri, 02 Feb 2024 13:25:54 -0500
+
 gst-python1.0 (1.22.6-1) unstable; urgency=medium
 
   * Team upload
