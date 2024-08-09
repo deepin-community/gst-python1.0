@@ -1,3 +1,95 @@
+=== release 1.24.6 ===
+
+2024-07-29 16:41:37 +0100  Tim-Philipp Müller <tim@centricular.com>
+
+	* NEWS:
+	* RELEASE:
+	* gst-python.doap:
+	* meson.build:
+	  Release 1.24.6
+
+2024-06-20 13:02:19 +0100  Tim-Philipp Müller <tim@centricular.com>
+
+	* meson.build:
+	  Back to development after 1.24.5
+
+=== release 1.24.5 ===
+
+2024-06-20 12:54:15 +0100  Tim-Philipp Müller <tim@centricular.com>
+
+	* NEWS:
+	* RELEASE:
+	* gst-python.doap:
+	* meson.build:
+	  Release 1.24.5
+
+2024-05-29 13:51:27 +0300  Tim-Philipp Müller <tim@centricular.com>
+
+	* meson.build:
+	  Back to development after 1.24.4
+
+=== release 1.24.4 ===
+
+2024-05-29 13:44:50 +0300  Tim-Philipp Müller <tim@centricular.com>
+
+	* NEWS:
+	* RELEASE:
+	* gst-python.doap:
+	* meson.build:
+	  Release 1.24.4
+
+2024-04-30 00:36:59 +0100  Tim-Philipp Müller <tim@centricular.com>
+
+	* meson.build:
+	  Back to development after 1.24.3
+	  Part-of: <https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6772>
+
+=== release 1.24.3 ===
+
+2024-04-30 00:15:23 +0100  Tim-Philipp Müller <tim@centricular.com>
+
+	* NEWS:
+	* RELEASE:
+	* gst-python.doap:
+	* meson.build:
+	  Release 1.24.3
+
+2024-04-26 03:37:47 +0530  Nirbheek Chauhan <nirbheek@centricular.com>
+
+	* meson.build:
+	  meson: Fix Python library searching on Windows
+	  Neither LIBDIR nor LIBPL are set with the native windows Python
+	  (unlike MSYS2), so we need to use `prefix` which takes us to the
+	  rootdir of the Python installation.
+	  The name is also different: it's python312.dll, not python3.12.dll.
+	  Part-of: <https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6748>
+
+2024-04-26 02:59:37 +0530  Nirbheek Chauhan <nirbheek@centricular.com>
+
+	* meson.build:
+	  meson: Fix Python library name fetching on Windows
+	  `python.get_variable('FOO', [])` becomes `python.get_variable('FOO')`
+	  due to how Meson treats empty arrays in arguments, which breaks the
+	  fallback feature of get_variable().
+	  So we need to actually check whether the variable exists before trying
+	  to fetch it.
+	  Part-of: <https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6748>
+
+2024-04-12 19:54:55 +0530  Nirbheek Chauhan <nirbheek@centricular.com>
+
+	* meson.build:
+	* plugin/meson.build:
+	  meson: Don't link to python for the gi overrides module
+	  We only need to link to python directly for the plugin:
+	  https://github.com/mesonbuild/meson/issues/7712#issuecomment-689357908
+	  https://github.com/Homebrew/homebrew-core/pull/165176#issuecomment-2051835257
+	  Part-of: <https://gitlab.freedesktop.org/gstreamer/gstreamer/-/merge_requests/6638>
+
+2024-04-10 00:04:02 +0100  Tim-Philipp Müller <tim@centricular.com>
+
+	* meson.build:
+	  Back to development after 1.24.2
+
 === release 1.24.2 ===
 
 2024-04-09 21:48:55 +0100  Tim-Philipp Müller <tim@centricular.com>
