@@ -4,7 +4,7 @@ include /usr/share/dpkg/default.mk
 include /usr/share/python3/python.mk
 
 export DEB_BUILD_MAINT_OPTIONS = hardening=+all
-export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs
+# export DEB_LDFLAGS_MAINT_APPEND = -Wl,-O1 -Wl,-z,defs
 
 PYVERS := $(shell py3versions --supported -v)
 FLAVOURS := $(PYVERS)
