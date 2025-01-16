@@ -32,6 +32,56 @@ GStreamer Python Bindings is a set of overrides and Gst fundamental types handli
 
  <release>
   <Version>
+   <revision>1.24.11</revision>
+   <branch>1.24</branch>
+   <name></name>
+   <created>2025-01-06</created>
+   <file-release rdf:resource="https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.24.11.tar.xz" />
+  </Version>
+ </release>
+
+ <release>
+  <Version>
+   <revision>1.24.10</revision>
+   <branch>1.24</branch>
+   <name></name>
+   <created>2024-12-03</created>
+   <file-release rdf:resource="https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.24.10.tar.xz" />
+  </Version>
+ </release>
+
+ <release>
+  <Version>
+   <revision>1.24.9</revision>
+   <branch>1.24</branch>
+   <name></name>
+   <created>2024-10-30</created>
+   <file-release rdf:resource="https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.24.9.tar.xz" />
+  </Version>
+ </release>
+
+ <release>
+  <Version>
+   <revision>1.24.8</revision>
+   <branch>1.24</branch>
+   <name></name>
+   <created>2024-09-19</created>
+   <file-release rdf:resource="https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.24.8.tar.xz" />
+  </Version>
+ </release>
+
+ <release>
+  <Version>
+   <revision>1.24.7</revision>
+   <branch>1.24</branch>
+   <name></name>
+   <created>2024-08-21</created>
+   <file-release rdf:resource="https://gstreamer.freedesktop.org/src/gst-python/gst-python-1.24.7.tar.xz" />
+  </Version>
+ </release>
+
+ <release>
+  <Version>
    <revision>1.24.6</revision>
    <branch>1.24</branch>
    <name></name>
